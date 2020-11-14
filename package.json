@@ -8,7 +8,9 @@
     "url": "http://eddealmeida.surge.sh"
   },
   "scripts": {
-    "build-dev": "node_modules/webpack/bin/webpack.js --mode development",
+    "build-prod": "node_modules/webpack/bin/webpack.js --config webpack.config.prod.js",
+    "start-prod": "npm run build-prod && node ./bin/www",
+    "build-dev": "node_modules/webpack/bin/webpack.js --config webpack.config.dev.js",
     "start": "npm run build-dev && node ./bin/www"
   },
   "dependencies": {
