@@ -5,4 +5,18 @@ html
     script(src="/javascripts/bundle.js")
   body
     header= title
-    block content
+    div(class="content")
+      div(class="container-fluid")
+        div(class="row")
+          div(class="col-3")
+            ul
+              li(class="title")= "Opções"
+              li(class="item")
+                a(href="/pec")= "PEC - Proposta de Emenda Constitucional"
+              li(class="item")
+                a(href="/plp")= "PLP - Projeto de Lei Complementar"
+              li(class="item")
+                a(href="/pl")= "PL - Projeto de Lei"
+          div(class="col-9")
+            block content
+    footer= "Copyright 2021 - Ed de Almeida"

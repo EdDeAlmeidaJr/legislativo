@@ -1,14 +1,72 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 
 body {
     margin: 0px;
     padding: 0px;
     font-family: Roboto;
     font-size: 14px;
+    font-weight: 300;
 
     header {
-        font-size: 2rem;
+        padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+        font-size: 2.5rem;
+        font-weight: 700;
         background-color: red;
         color: beige;
     }
+
+    div.content {
+        padding: 1.5rem 0rem 1.5rem 0rem;
+    }
+
+    footer {
+        padding: 0.3rem 1rem 0.3rem 1rem;
+        font-size: 1.2rem;
+        font-weight: 500;
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        background-color: red;
+        color: beige;
+        -webkit-border-radius: 9px;
+        -moz-border-radius: 9px;
+        border-radius: 9px;
+    }
+}
+
+ul,
+ol {
+    margin: 0px;
+    padding: 0px;
+}
+
+li {
+    list-style-type: none;
+    padding: 0.5rem;
+}
+
+li.title {
+    background-color: red;
+    color: beige;
+    text-align: center;
+    -webkit-border-top-left-radius: 9px;
+    -webkit-border-top-right-radius: 9px;
+    -moz-border-radius-topleft: 9px;
+    -moz-border-radius-topright: 9px;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+    border: 1px solid red;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+li.item {
+    border: 1px solid red;
+    border-top: 0px solid red;
+}
+
+a {
+    color: #222;
+    text-decoration: none;
+    font-weight: 400;
 }
